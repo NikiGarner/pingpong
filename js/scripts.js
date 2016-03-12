@@ -12,7 +12,7 @@ for (var i=1; i <= 100; i++){
 
 //User Logic
 $(document).ready(function(){
-  $("form#number").submit(function(event){
+  $("form#inputNumber").submit(function(event){
     var userNumber = $("input#userInput").val();
 
   event.preventDefault();
