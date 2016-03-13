@@ -1,20 +1,33 @@
-//Business Logic
-for (var i=1; i <= 100; i++){
-  if (i % 15 == 0)
-    print("Pingpong");
-  else if (i % 5 == 0)
-    print("Pong");
-  else if (i % 3 == 0)
-    print("Ping");
-  else
-    print(i);
+  alert("test 1")
+var gameString = [];
+var pingpong = function(n){
+  for (var i = 1; i <= n; i++){
+  if (i % 15 === 0){
+    gameString.push("Pingpong");
+  }
+  else if (i % 5 === 0){
+    gameString.push("Pong");
+  }
+
+  else if (i % 3 === 0){
+    gameString.push("Ping");
+  }
+  else{
+    gameString.push('' + i + '');
+  }
+  }
 };
 
-//User Logic
-$(document).ready(function(){
-  $("form#inputNumber").submit(function(event){
-    var userNumber = $("input#userInput").val();
 
-  event.preventDefault();
-  }
+  $("form#inputNumber").submit(function(event){
+    alert("test2")
+    var n = $("input#userInput").val();
+
+    pingpong(n);
+
+
+    $("#result").show();
+    $("#resultNumber").append(gameString.join(' '));
+
+    event.preventDefault();
 });
