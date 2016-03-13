@@ -1,3 +1,31 @@
 #result{
   display: none;
 }
+
+.jumbotron{
+  margin-top: 20px;
+  background: #006600;
+  color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+.inputNumber{
+  float: left;
+  display: block;
+}
+
+ul{
+  list-style: none;
+  font-size: 20px;
+}
+
+p{
+  font-size: 20px;
+}
+
+#result{
+  margin-top: 10px;
+}

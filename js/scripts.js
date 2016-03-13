@@ -1,4 +1,3 @@
-  alert("test 1")
 var gameString = [];
 var pingpong = function(n){
   for (var i = 1; i <= n; i++){
@@ -20,7 +19,6 @@ var pingpong = function(n){
 
 
   $("form#inputNumber").submit(function(event){
-    alert("test2")
     var n = $("input#userInput").val();
 
     pingpong(n);
